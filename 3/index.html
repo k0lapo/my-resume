@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adegbite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Adegbite Adekolapo</h1>
+        <h2>Software Developer</h2>
+        <div id="menu">
+            <a onclick="showabout()">About</a>
+            <a onclick="showwork()">Work</a>
+            <a onclick="showcontact()">Contact</a>
+        </div>
+        <table>
+            <div class="social">
+                <a class="social" href="https://github.com/k0lapo"><i class="fab fa-github"></i></a>
+                <a class="social" href="https://x.com/kvolapor"><i class="fab fa-twitter"></i></a>
+                <a class="social" href="https://instagram.com/k0lapo"><i class="fab fa-instagram"></i></a>
+            </div>
+                    
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Works</h1>
+        <section>
+            <h2>Website Designer</h2>
+            <a href="https://byobsaturdays.com/">BYOB Saturdays</a>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;React JS</div>
+            </div>
+            <button class="btn_one" onclick="showcontact()">Connect</button>
+        </section>
+    </div>
+    <div id="about_container" class="container container1">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <div class="contain">
+            <h1>About</h1>
+        <section>
+            <h2>Hello, I'm Adegbite Adekolapo!</h2>
+            <p>
+                I'm a passionate software engineer (front-end) with a keen interest in creating elegant and efficient solutions to real-world problems. My journey in the world of technology started with a fascination for building things and has evolved into a career focused on web development and beyond.
+            </p>
+        
+        </section>
+            
+        <section>
+            <h2>Skills</h2>
+            <h3>HTML, CSS, JavaScript</h3>
+            <p>
+                I have a strong foundation in front-end web development with expertise in HTML, CSS, and JavaScript. I strive to create visually appealing and user-friendly interfaces that provide an exceptional user experience across different devices and platforms.
+            </p>
+            <h3>Wordpress</h3>
+            <p>
+                With extensive experience in WordPress development, I've built custom themes and plugins to empower clients with dynamic and scalable websites. I enjoy working with WordPress's flexibility and customization options to bring clients' visions to life.
+            </p>
+            <h3>React</h3>
+            <p>
+                I'm proficient in React, a powerful JavaScript library for building interactive and dynamic user interfaces. Leveraging React's component-based architecture, I've developed modern and responsive web applications that deliver high performance and scalability.
+            </p>
+        </section>
+        <section>
+            <h2>Let's Connect!</h2>
+            <p>
+                I'm always eager to collaborate on exciting projects and explore new opportunities. Whether you're looking to enhance your web presence, develop a cutting-edge application, or simply have a chat about technology, feel free to reach out! Let's work together to turn your ideas into reality.
+            </p>
+        </section>
+        <table>
+            <div class="social">
+                <a class="social" href="https://github.com/k0lapo"><i class="fab fa-github"></i></a>
+                <a class="social" href="https://x.com/kvolapor"><i class="fab fa-twitter"></i></a>
+                <a class="social" href="https://instagram.com/k0lapo"><i class="fab fa-instagram"></i></a>
+            </div>
+                    
+        </table>
+        </div>
+        
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <div class="contain">
+            <h1>Contact</h1>
+            <section>
+                <h2>Reach Me</h2>
+                <p>
+                    <form action="https://formspree.io/f/xleqawyn" method="POST">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="email" required><br>
+                        <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                        <button type="submit" class="btn_one">Send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+    </div>
+    <div id="footer">
+        Made by <a href="">k0lapo</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
